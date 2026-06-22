@@ -64,6 +64,11 @@ At each iteration:
 
 The project was intentionally designed to be lightweight and executable on modest computing resources.
 
+# TO DO:
+- add results page
+- try out larger dimensional world maps in rented out GPUs
+- add SotA source seeking algo
+
 ## Example Research Questions
 - Can generative models accelerate source-seeking under partial observability?
 - How much prior knowledge is required for accurate field reconstruction?
