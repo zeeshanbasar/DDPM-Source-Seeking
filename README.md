@@ -23,25 +23,34 @@ At each iteration:
 3. A conditional DDPM reconstructs the unobserved portions of the field.
 4. A simple multi-scale hill-climbing algorithm searches the reconstructed field for the most promising direction.
 5. The agent moves and repeats the process.
-Unknown Field
-      │
-      ▼
- Local Measurements
-      │
-      ▼
- Partial Belief Map
-      │
-      ▼
- Conditional DDPM
-      │
-      ▼
- Reconstructed World Model
-      │
-      ▼
- Multi-Scale Optimization
-      │
-      ▼
- Next Measurement Location
+
+              ┌───────────────────────────────┐
+              │         Unknown Field         │
+              └───────────────┬───────────────┘
+                              ↓
+              ┌───────────────────────────────┐
+              │      Local Measurements       │
+              └───────────────┬───────────────┘
+                              ↓
+              ┌───────────────────────────────┐
+              │      Partial Belief Map       │
+              └───────────────┬───────────────┘
+                              ↓
+              ┌───────────────────────────────┐
+              │      Conditional DDPM         │
+              └───────────────┬───────────────┘
+                              ↓
+              ┌───────────────────────────────┐
+              │   Reconstructed World Model   │
+              └───────────────┬───────────────┘
+                              ↓
+              ┌───────────────────────────────┐
+              │   Multi-Scale Optimization    │
+              └───────────────┬───────────────┘
+                              ↓
+              ┌───────────────────────────────┐
+              │   Next Measurement Location   │
+              └───────────────────────────────┘
 
 ## Current Setup
 
