@@ -1,9 +1,9 @@
-.\data\
-.\datasets\
-.\small_timeSteps_test\
-.\tools\
-.\trialOuts\
-.\default\
-.\__pycache__\
+./data/
+./datasets/
+./small_timeSteps_test/
+./tools/
+./trialOuts/
+./default/
+./__pycache__/
 extract_mnist_images.py
 random_loc_noise-test.py
